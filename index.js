@@ -7,9 +7,9 @@ const { validateMovieSchema, validatePartialMovie } = require('./schemas/movieSc
 const app = express()
 app.use(express.json())
 app.use(cors())
-const PORT = process.env.PORT ?? 1234
-
 app.disable('x-powered-by')
+
+const PORT = process.env.PORT ?? 1234
 
 const ACCEPTED_ORIGINS = [
   'http://192.168.18.103:8080',
